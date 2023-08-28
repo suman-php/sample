@@ -51,7 +51,7 @@ class UserHobbiesController extends Controller
     public function getUsers() {
       
         if(request()->ajax()) {
-            $query = User::query();
+            $query = User::query();  
            
           
            return  DataTables::of($query)
